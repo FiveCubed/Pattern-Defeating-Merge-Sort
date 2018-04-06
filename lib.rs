@@ -85,7 +85,7 @@ fn make_subsets (v:Vec<usize>) -> Vec<Vec<usize>> { // works in the same time co
             out.last_mut().unwrap().push(subsets[i].0[o]);
         }
     }
-    println!("{}, {}", v.len(), subsets.len());
+    //println!("{}, {}", v.len(), subsets.len());
     //println!("{:?}", out);
     
     out
