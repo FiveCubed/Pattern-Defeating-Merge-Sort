@@ -1,7 +1,7 @@
-#![allow(unused_variables)]
-#![allow(dead_code)]
-#![allow(unused_assignments)]
-#![allow(non_snake_case)]
+#[allow(unused_variables)]
+#[allow(dead_code)]
+#[allow(unused_assignments)]
+#[allow(non_snake_case)]
 
 //you can change the type of vec[T] that this works on by finding and replacing every 'usize' with the type you want to use. it should work
 
@@ -138,10 +138,4 @@ fn merge(v1:&Vec<usize>, v2:&Vec<usize>) -> Vec<usize> {
         }
     }
     out
-}
-
-fn rand(x:u32) -> u32 {
-	let y = x as u64 * x as u64 + x as u64;
-	
-	((y >> 16) ^ (y << 16)) as u32
 }
